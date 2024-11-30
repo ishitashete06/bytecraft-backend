@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:'http://localhost:5173',
+    origin:'https://hack2hire-bytecraft-2.onrender.com',
     credentials:true
 }
 
@@ -41,7 +41,7 @@ app.use('/api/tasks', taskRoutes);
 
 
 app.use(cors({
-    origin: "http://localhost:5173", // replace with your frontend URL
+    origin: "https://hack2hire-bytecraft-2.onrender.com", // replace with your frontend URL
     credentials: true,  // allow cookies if needed
   }));
   
